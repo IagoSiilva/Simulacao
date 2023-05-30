@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body">
+
+    <nav class="list-group-horizontal bg-light position-fixed w-100" style="z-index: 1;">
+        <ul class="d-flex">
+            <li class=" nav-menu list-group-item me-3" style="cursor: pointer;">Menu</li>
+            <li class="nav-siga-nos list-group-item" style="cursor: pointer;">Siga-nos</li>
+        </ul>
+    </nav>
+    <div class="menu-suspenso" style="position: fixed; top: 30px; z-index: 10;">
+        <ul class="menu list-group position-fixed border rounded p-3 " style="width: 200px;" style="top: 10px;">
+            <li class="list-group-item me-1"><ion-icon name="logo-twitter"></ion-icon>Home</li>
+            <li class="list-group-item me-1"><ion-icon name="call-outline"></ion-icon>Contatos</li>
+            <li class="list-group-item me-1"><ion-icon name="information-circle-outline"></ion-icon>Sobre</li>
+        </ul>
+        <ul class="siga-nos list-group position-fixed border rounded p-3" style="width: 200px" >
+            <li class="list-group-item"><ion-icon name="logo-facebook"></ion-icon>Facebook</li>
+            <li class="list-group-item"><ion-icon name="logo-twitter"></ion-icon>Instagram</li>
+            <li class="list-group-item"><ion-icon name="logo-twitter"></ion-icon>Twitter</li>
+        </ul>
+    </div>
+    <div class="fechar p-3 bg-warning circle" style="width: 10px; height: 10px; display: flex; justify-content: center; align-items: center; border-radius: 50%; position: fixed; left: 338px; z-index: 1; cursor: pointer; color: white; top: 70px;">X</div>
+    <div class="propaganda container bg-light" style="position: fixed; top: 70px; ">
+        <div class="row">
+            <div class="col-6 offset-3 bg-light">
+                <div class="card">
+                    <img src="c02513ce-cachorro-550x500-1.jpg" alt="" class="card-img-top">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Conheça nossas rações</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing. Nostrum, aspernatur.</p>
+                    <a href="#" class="btn btn-primary">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolore commodi aut nemo, et vero. Alias eveniet ad, at soluta possimus necessitatibus maxime quasi cumque fugiat expedita, modi ut blanditiis?
+        Mollitia, quas eum dolore sit similique quod asperiores! Nulla nam porro minima fuga, similique quasi illo. Amet magni consectetur voluptatem dolorum soluta eveniet explicabo omnis, laboriosam tempora pariatur eius nisi?
+        Facere accusantium fugiat maxime eaque pariatur inventore temporibus explicabo dolorum aliquam, quidem reprehenderit magnam, provident dolore. Eius numquam optio voluptates eligendi? Optio cupiditate, doloremque inventore ex distinctio necessitatibus soluta magnam?
+        Harum illum doloribus libero expedita, laudantium eaque veniam molestias accusamus doloremque ratione quod accusantium possimus inventore atque ab error placeat, illo, omnis consequatur rerum unde animi distinctio? A, earum illum!
+        Rem voluptate molestias reprehenderit ratione in totam iste dignissimos aut ipsa autem incidunt dolorum officia aspernatur neque iure, dolorem commodi doloribus voluptas modi beatae! Natus mollitia saepe deserunt facere nesciunt?
+        Libero consectetur tenetur laudantium non quos, iusto voluptatum aliquam a animi quidem nesciunt. Quae libero numquam deleniti, quod magnam, enim placeat similique soluta delectus, odit fuga vero autem voluptas sint.
+        Nulla hic ducimus aspernatur iure natus sequi, vel necessitatibus asperiores id molestiae voluptas obcaecati qui debitis ullam, similique accusantium? Officia, delectus repudiandae. Aperiam veniam neque delectus! Facere nihil quaerat distinctio?
+        Eaque quia dolorem eius, esse nobis odit pariatur dolores quas facere veniam necessitatibus sit et voluptates officia quisquam qui maiores itaque voluptas id, dicta ad beatae soluta commodi! Aperiam, aliquid?
+        Ratione vitae, quisquam id modi laborum totam incidunt laudantium odio molestias dolore inventore nesciunt suscipit a quos et. Maxime rerum id ipsum veritatis! Obcaecati, vero voluptate voluptas sint quibusdam quam.
+        Eum velit nobis maxime a neque fugiat veniam in quae culpa veritatis deleniti molestias libero fuga odio impedit officiis, eos sit provident? Vero nobis deserunt a, impedit cum error architecto!
+    </div>
+    <hr>
+    <style>
+        div{
+            display: flex;
+            justify-content: center;
+        }
+        .rodape{
+            width: 60px;
+            margin: 0 5px;
+        }
+        .selected{
+            border: 1px solid green;
+        }
+        .carousel{
+            width: 300px;
+        }
+        p{
+            cursor: pointer;
+        }
+    </style>
+    <div class="container">
+        <img src="01-domesticated-dog.jpg" alt="" class=" img1 carousel">
+        <img src="246-400x400-Media-1.jpg" alt="" class=" img2 carousel">
+        <img src="voce-esta-preparado-para-ter-um-cachorro-amamoscachorros-400x400.jpg" alt="" class="img3 carousel">
+        <img src="racao-sem-corante2.jpg" alt="" class="img4 carousel">
+    </div>
+    <p class="next"></p>
+    <div class="container">
+        <img src="01-domesticated-dog.jpg" alt="" class="mini1 selected rodape">
+        <img src="246-400x400-Media-1.jpg" alt="" class="mini2 rodape">
+        <img src="voce-esta-preparado-para-ter-um-cachorro-amamoscachorros-400x400.jpg" alt="" class="mini3 rodape">
+        <img src="racao-sem-corante2.jpg" alt="" class="mini4 rodape">
+    </div>
+
+
+
+
+
+    <!-- Jquery -->
+    <script src="jquery.js"></script>
+    <!-- Script -->
+    <script src="script.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- Ion icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  </body>
+</html>
